@@ -1,0 +1,870 @@
+﻿[
+    {
+        "name":  "Skydive Tecumseh",
+        "dzId":  7
+    },
+    {
+        "name":  "Sample Dropzone",
+        "dzId":  10
+    },
+    {
+        "name":  "Skydive Alabama",
+        "dzId":  11
+    },
+    {
+        "name":  "Skydive Tennessee",
+        "dzId":  15
+    },
+    {
+        "name":  "Skydive Georgia",
+        "dzId":  18
+    },
+    {
+        "name":  "Skydive Chicago",
+        "dzId":  27
+    },
+    {
+        "name":  "Skydive Indianapolis",
+        "dzId":  36
+    },
+    {
+        "name":  "Wisconsin Skydiving Center",
+        "dzId":  43
+    },
+    {
+        "name":  "Des Moines Skydivers",
+        "dzId":  47
+    },
+    {
+        "name":  "Skydive the Wasatch",
+        "dzId":  48
+    },
+    {
+        "name":  "Skydive Philadelphia",
+        "dzId":  51
+    },
+    {
+        "name":  "Skydive City Zephyrhills",
+        "dzId":  53
+    },
+    {
+        "name":  "Skydive Sussex",
+        "dzId":  57
+    },
+    {
+        "name":  "Start Skydiving, LLC",
+        "dzId":  70
+    },
+    {
+        "name":  "Skydive Perris School",
+        "dzId":  99
+    },
+    {
+        "name":  "Skydive Paraclete XP",
+        "dzId":  125
+    },
+    {
+        "name":  "Dropzone Denmark",
+        "dzId":  178
+    },
+    {
+        "name":  "Skydive Elsinore",
+        "dzId":  189
+    },
+    {
+        "name":  "Skydive Jurien Bay",
+        "dzId":  193
+    },
+    {
+        "name":  "Parachutisme Adrénaline",
+        "dzId":  203
+    },
+    {
+        "name":  "SA Skydiving Ops",
+        "dzId":  204
+    },
+    {
+        "name":  "Parachute 3R-Victo",
+        "dzId":  207
+    },
+    {
+        "name":  "Music City Skydiving",
+        "dzId":  208
+    },
+    {
+        "name":  "Parachute GO Skydive",
+        "dzId":  215
+    },
+    {
+        "name":  "Skydive Operations Demo",
+        "dzId":  223
+    },
+    {
+        "name":  "JumpTN",
+        "dzId":  230
+    },
+    {
+        "name":  "Skydive Carolina",
+        "dzId":  256
+    },
+    {
+        "name":  "WNYSkydiving",
+        "dzId":  257
+    },
+    {
+        "name":  "Skydive Monroe",
+        "dzId":  261
+    },
+    {
+        "name":  "Piedmont Skydiving",
+        "dzId":  292
+    },
+    {
+        "name":  "Fyrosity® Skydiving Center Las Vegas",
+        "dzId":  317
+    },
+    {
+        "name":  "Skydive Andes Chile",
+        "dzId":  329
+    },
+    {
+        "name":  "DEMO: APF Demo",
+        "dzId":  339
+    },
+    {
+        "name":  "Skydive Gananoque",
+        "dzId":  352
+    },
+    {
+        "name":  "Skydive Midwest",
+        "dzId":  359
+    },
+    {
+        "name":  "Pepes Island Boogie",
+        "dzId":  371
+    },
+    {
+        "name":  "Skydive Utah",
+        "dzId":  385
+    },
+    {
+        "name":  "Skydive Orange",
+        "dzId":  390
+    },
+    {
+        "name":  "Adelaide Skydiving Centre Pty Ltd",
+        "dzId":  392
+    },
+    {
+        "name":  "Skydive Sebastian",
+        "dzId":  396
+    },
+    {
+        "name":  "Skydive Netheravon",
+        "dzId":  398
+    },
+    {
+        "name":  "CSC",
+        "dzId":  408
+    },
+    {
+        "name":  "Skydive Parys",
+        "dzId":  409
+    },
+    {
+        "name":  "Skydive Twin Cities",
+        "dzId":  416
+    },
+    {
+        "name":  "Jumptown",
+        "dzId":  417
+    },
+    {
+        "name":  "Skydive Cincinnati",
+        "dzId":  419
+    },
+    {
+        "name":  "Skydive Langar",
+        "dzId":  531
+    },
+    {
+        "name":  "Skydive Tønsberg",
+        "dzId":  551
+    },
+    {
+        "name":  "Skydive Cross Keys",
+        "dzId":  561
+    },
+    {
+        "name":  "SkydiveKC",
+        "dzId":  621
+    },
+    {
+        "name":  "DZONE® - BOISE",
+        "dzId":  731
+    },
+    {
+        "name":  "Skydive The Rock",
+        "dzId":  861
+    },
+    {
+        "name":  "DZONE® BOZEMAN",
+        "dzId":  871
+    },
+    {
+        "name":  "Skydive Fargo",
+        "dzId":  911
+    },
+    {
+        "name":  "Skydive Toronto Inc",
+        "dzId":  1111
+    },
+    {
+        "name":  "Aarhus Faldskærms Club",
+        "dzId":  1141
+    },
+    {
+        "name":  "Ozarks Skydive Center",
+        "dzId":  1311
+    },
+    {
+        "name":  "Skydive Suffolk",
+        "dzId":  1421
+    },
+    {
+        "name":  "Skydive Voss",
+        "dzId":  1911
+    },
+    {
+        "name":  "Blue Sky Ranch",
+        "dzId":  2023
+    },
+    {
+        "name":  "Skydive Panama City",
+        "dzId":  2133
+    },
+    {
+        "name":  "Dallas Skydive Center",
+        "dzId":  2271
+    },
+    {
+        "name":  "Skydive Spain",
+        "dzId":  2351
+    },
+    {
+        "name":  "Texas Skydiving",
+        "dzId":  2401
+    },
+    {
+        "name":  "Skydive Coastal Carolinas",
+        "dzId":  2521
+    },
+    {
+        "name":  "Aversi Faldskærms Club",
+        "dzId":  2581
+    },
+    {
+        "name":  "Skydive West Plains",
+        "dzId":  2661
+    },
+    {
+        "name":  "Skydive New England",
+        "dzId":  2921
+    },
+    {
+        "name":  "Skydive Hibaldstow",
+        "dzId":  2933
+    },
+    {
+        "name":  "SkyDance SkyDiving",
+        "dzId":  2943
+    },
+    {
+        "name":  "Canton Air Sports",
+        "dzId":  2973
+    },
+    {
+        "name":  "Bay Area Skydiving",
+        "dzId":  2993
+    },
+    {
+        "name":  "Midwest Freefall SPC Inc.",
+        "dzId":  3113
+    },
+    {
+        "name":  "Skydive Pennsylvania",
+        "dzId":  3293
+    },
+    {
+        "name":  "Skydive Sweden",
+        "dzId":  3373
+    },
+    {
+        "name":  "Skydive San Diego",
+        "dzId":  3393
+    },
+    {
+        "name":  "Skydive the Ranch",
+        "dzId":  3451
+    },
+    {
+        "name":  "Cleveland Skydiving Center",
+        "dzId":  3481
+    },
+    {
+        "name":  "Skydive Houston",
+        "dzId":  3563
+    },
+    {
+        "name":  "Skydive California",
+        "dzId":  3773
+    },
+    {
+        "name":  "Skydive Algarve",
+        "dzId":  3911
+    },
+    {
+        "name":  "Skydive Flanders - Zwartberg",
+        "dzId":  3993
+    },
+    {
+        "name":  "Paracentrum Texel",
+        "dzId":  4043
+    },
+    {
+        "name":  "Skydive Danielson",
+        "dzId":  4661
+    },
+    {
+        "name":  "Odense Faldskærmscenter",
+        "dzId":  4671
+    },
+    {
+        "name":  "Silicon Valley Skydiving",
+        "dzId":  4763
+    },
+    {
+        "name":  "Skydive Puerto Rico",
+        "dzId":  4843
+    },
+    {
+        "name":  "Skydive Adventures",
+        "dzId":  4985
+    },
+    {
+        "name":  "Florida Skydive",
+        "dzId":  4995
+    },
+    {
+        "name":  "Skydive Flanders - Schaffen",
+        "dzId":  5215
+    },
+    {
+        "name":  "Skydive Flanders - Moorsele",
+        "dzId":  5225
+    },
+    {
+        "name":  "AerOhio Skydiving",
+        "dzId":  5415
+    },
+    {
+        "name":  "Edmonton Skydive",
+        "dzId":  5445
+    },
+    {
+        "name":  "Skydive Zeeland",
+        "dzId":  5854
+    },
+    {
+        "name":  "Virginia Skydiving Center",
+        "dzId":  5932
+    },
+    {
+        "name":  "Nordjysk Faldskærmsklub",
+        "dzId":  6064
+    },
+    {
+        "name":  "Eugene Skydivers",
+        "dzId":  6123
+    },
+    {
+        "name":  "Skydive Ameland",
+        "dzId":  6124
+    },
+    {
+        "name":  "Tessel Air",
+        "dzId":  6184
+    },
+    {
+        "name":  "Kuwait Skydive \u0026 Fly",
+        "dzId":  6393
+    },
+    {
+        "name":  "Skydive Skåne",
+        "dzId":  6444
+    },
+    {
+        "name":  "Skydive Rotterdam “The Flying Dutchmen”",
+        "dzId":  6544
+    },
+    {
+        "name":  "Skydive Atlanta",
+        "dzId":  6673
+    },
+    {
+        "name":  "Skydive Viken",
+        "dzId":  6693
+    },
+    {
+        "name":  "Lincoln Sport Parachute Club",
+        "dzId":  6743
+    },
+    {
+        "name":  "Prostipad",
+        "dzId":  6784
+    },
+    {
+        "name":  "Skydive Extreme Calgary",
+        "dzId":  6791
+    },
+    {
+        "name":  "Skydive the Falls",
+        "dzId":  6891
+    },
+    {
+        "name":  "Abu Dhabi Skydive",
+        "dzId":  7131
+    },
+    {
+        "name":  "Skydive Viborg",
+        "dzId":  7201
+    },
+    {
+        "name":  "Skydive Dubai Desert Campus",
+        "dzId":  7311
+    },
+    {
+        "name":  "Skydive Dubai Palm",
+        "dzId":  7331
+    },
+    {
+        "name":  "Skydive Gyrocopter",
+        "dzId":  7371
+    },
+    {
+        "name":  "Crystal Coast Skydiving LLC",
+        "dzId":  7411
+    },
+    {
+        "name":  "iSkydive Detroit",
+        "dzId":  8071
+    },
+    {
+        "name":  "iSkydive Charlevoix",
+        "dzId":  8081
+    },
+    {
+        "name":  "deserttest",
+        "dzId":  8082
+    },
+    {
+        "name":  "palmtest",
+        "dzId":  8092
+    },
+    {
+        "name":  "Skydive Pretoria",
+        "dzId":  8111
+    },
+    {
+        "name":  "iSkydive Miami",
+        "dzId":  8131
+    },
+    {
+        "name":  "Skydive GB Parachute Club",
+        "dzId":  8144
+    },
+    {
+        "name":  "Sibson Skydivers",
+        "dzId":  8154
+    },
+    {
+        "name":  "Skydive STL",
+        "dzId":  8171
+    },
+    {
+        "name":  "Skydive the Gulf",
+        "dzId":  8281
+    },
+    {
+        "name":  "Skydive South Boston",
+        "dzId":  8301
+    },
+    {
+        "name":  "iSkydive DC/Baltimore",
+        "dzId":  8351
+    },
+    {
+        "name":  "iSkydive Dallas Fort Worth",
+        "dzId":  8411
+    },
+    {
+        "name":  "iSkydive Los Angeles",
+        "dzId":  8421
+    },
+    {
+        "name":  "Pacific Northwest Skydiving Center",
+        "dzId":  8461
+    },
+    {
+        "name":  "Beccles Skydivers",
+        "dzId":  8494
+    },
+    {
+        "name":  "Skydive Colorado",
+        "dzId":  8551
+    },
+    {
+        "name":  "PCS Tandem Skydive",
+        "dzId":  8671
+    },
+    {
+        "name":  "iSkydive Charleston",
+        "dzId":  8691
+    },
+    {
+        "name":  "iSkydive philadelphia-jersey shore",
+        "dzId":  8991
+    },
+    {
+        "name":  "Skydive Oslo",
+        "dzId":  9094
+    },
+    {
+        "name":  "Black Knights Parachute Centre",
+        "dzId":  9134
+    },
+    {
+        "name":  "Parachute Ottawa",
+        "dzId":  9401
+    },
+    {
+        "name":  "Skydive Bjorli Tønsberg",
+        "dzId":  10004
+    },
+    {
+        "name":  "Test dropzone",
+        "dzId":  10341
+    },
+    {
+        "name":  "Flying-Devil",
+        "dzId":  10381
+    },
+    {
+        "name":  "Deep Dive Dubai",
+        "dzId":  10571
+    },
+    {
+        "name":  "iSkydive New York City",
+        "dzId":  10631
+    },
+    {
+        "name":  "Commando Skydivers Club",
+        "dzId":  10654
+    },
+    {
+        "name":  "Faldskærmsklubben.DK",
+        "dzId":  10761
+    },
+    {
+        "name":  "Skydive Ireland",
+        "dzId":  10864
+    },
+    {
+        "name":  "Faldskærmsklubben Nordenfjords",
+        "dzId":  11021
+    },
+    {
+        "name":  "Saltamos.es (SkydiveBCN)",
+        "dzId":  11051
+    },
+    {
+        "name":  "Skydive Finland",
+        "dzId":  11491
+    },
+    {
+        "name":  "YUU Skydive",
+        "dzId":  11551
+    },
+    {
+        "name":  "Elevation BCN",
+        "dzId":  11621
+    },
+    {
+        "name":  "Skydive Milwaukee / Sky Knights SPC",
+        "dzId":  11651
+    },
+    {
+        "name":  "Xline",
+        "dzId":  11711
+    },
+    {
+        "name":  "Inflight",
+        "dzId":  11721
+    },
+    {
+        "name":  "Parachute Montréal Rive-Nord",
+        "dzId":  11731
+    },
+    {
+        "name":  "Parachute Montréal Rive-Sud",
+        "dzId":  11741
+    },
+    {
+        "name":  "Far North Freefall",
+        "dzId":  11774
+    },
+    {
+        "name":  "Skydive Oppdal",
+        "dzId":  11984
+    },
+    {
+        "name":  "Jump Omaha Skydiving",
+        "dzId":  12031
+    },
+    {
+        "name":  "Skydive Mountain City",
+        "dzId":  12061
+    },
+    {
+        "name":  "Husein Test Dropzone",
+        "dzId":  12231
+    },
+    {
+        "name":  "Husein dev dropzone",
+        "dzId":  12234
+    },
+    {
+        "name":  "Skydive NEPA",
+        "dzId":  12251
+    },
+    {
+        "name":  "ACTION FLIGHT AVIATION LLC - Aerobatic Flights",
+        "dzId":  12381
+    },
+    {
+        "name":  "Ultimate Skydiving Adventures",
+        "dzId":  12431
+    },
+    {
+        "name":  "Boston Skydive Center",
+        "dzId":  12441
+    },
+    {
+        "name":  "ACTION FLIGHT AVIATION LLC - Hot Air Balloon Flights",
+        "dzId":  12661
+    },
+    {
+        "name":  "ACTION FLIGHT AVIATION LLC - Skydive",
+        "dzId":  12671
+    },
+    {
+        "name":  "Skydive Windy City",
+        "dzId":  12691
+    },
+    {
+        "name":  "XPark By Etisalat",
+        "dzId":  12701
+    },
+    {
+        "name":  "USPA",
+        "dzId":  12711
+    },
+    {
+        "name":  "Nordsjællands Faldskærms Klub",
+        "dzId":  12991
+    },
+    {
+        "name":  "Skydive SWOOP",
+        "dzId":  13011
+    },
+    {
+        "name":  "Skydive Dubai Special Projects",
+        "dzId":  13014
+    },
+    {
+        "name":  "The Skydive School",
+        "dzId":  13071
+    },
+    {
+        "name":  "Skydive Northstar LLC",
+        "dzId":  13261
+    },
+    {
+        "name":  "Grenland Fallskjermklubb",
+        "dzId":  13298
+    },
+    {
+        "name":  "Gateway Skydiving Center",
+        "dzId":  13446
+    },
+    {
+        "name":  "Skydive The Volcano",
+        "dzId":  13686
+    },
+    {
+        "name":  "Hillman Farm Skydivers Inc",
+        "dzId":  13766
+    },
+    {
+        "name":  "Skydive Seneca Lake",
+        "dzId":  13926
+    },
+    {
+        "name":  "Viva Skydive",
+        "dzId":  13936
+    },
+    {
+        "name":  "Seven Hills Skydivers",
+        "dzId":  13976
+    },
+    {
+        "name":  "Skydive Raleigh",
+        "dzId":  14056
+    },
+    {
+        "name":  "World Championships 2024",
+        "dzId":  14211
+    },
+    {
+        "name":  "SkydiveTC",
+        "dzId":  14231
+    },
+    {
+        "name":  "Airborne Petawawa",
+        "dzId":  14271
+    },
+    {
+        "name":  "Above the Poconos Skydivers",
+        "dzId":  14331
+    },
+    {
+        "name":  "Demo For Livia",
+        "dzId":  14501
+    },
+    {
+        "name":  "Skydive Dubai Aviation Club",
+        "dzId":  14561
+    },
+    {
+        "name":  "SKYDIVE SKYDOWN",
+        "dzId":  14601
+    },
+    {
+        "name":  "Smoky Mountain Skydive",
+        "dzId":  14631
+    },
+    {
+        "name":  "Gyro Flight Training",
+        "dzId":  14681
+    },
+    {
+        "name":  "Troms fallskjermklubb",
+        "dzId":  14682
+    },
+    {
+        "name":  "The Banks Wedding",
+        "dzId":  14941
+    },
+    {
+        "name":  "Skydive Chesapeake",
+        "dzId":  14961
+    },
+    {
+        "name":  "Irish Parachute Club Ltd",
+        "dzId":  15091
+    },
+    {
+        "name":  "Skydive Bend",
+        "dzId":  15101
+    },
+    {
+        "name":  "Go Skydive Nashville",
+        "dzId":  15261
+    },
+    {
+        "name":  "Skyhigh India",
+        "dzId":  15692
+    },
+    {
+        "name":  "Nimbus Fallskjermklubb",
+        "dzId":  16022
+    },
+    {
+        "name":  "Skydive Elément",
+        "dzId":  16032
+    },
+    {
+        "name":  "Skydive South Africa",
+        "dzId":  16042
+    },
+    {
+        "name":  "Skydive pharoas",
+        "dzId":  16082
+    },
+    {
+        "name":  "Connecticut Parachutists Inc",
+        "dzId":  16141
+    },
+    {
+        "name":  "Flight Providers",
+        "dzId":  16161
+    },
+    {
+        "name":  "BRO Skydive Indonesia",
+        "dzId":  16162
+    },
+    {
+        "name":  "DZ Demo",
+        "dzId":  16202
+    },
+    {
+        "name":  "iSkydive new york city COPY",
+        "dzId":  16222
+    },
+    {
+        "name":  "Skydive Madrid",
+        "dzId":  16231
+    },
+    {
+        "name":  "Skydive Skylark",
+        "dzId":  16241
+    },
+    {
+        "name":  "Compact",
+        "dzId":  16252
+    },
+    {
+        "name":  "SkyFest India",
+        "dzId":  16292
+    },
+    {
+        "name":  "Middle Tennessee Skydiving",
+        "dzId":  16361
+    },
+    {
+        "name":  "SKYDIVE BALLITO",
+        "dzId":  16372
+    },
+    {
+        "name":  "Drop Zone Skydive Terengganu",
+        "dzId":  16382
+    },
+    {
+        "name":  "Daedalus",
+        "dzId":  16401
+    },
+    {
+        "name":  "Dropzone Wonder",
+        "dzId":  16531
+    }
+]
