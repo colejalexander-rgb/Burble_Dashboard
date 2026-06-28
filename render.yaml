@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: burble-dashboard
+    runtime: node
+    plan: free
+    rootDir: web
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeployTrigger: commit

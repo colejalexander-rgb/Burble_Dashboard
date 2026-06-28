@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Burble Boards">
+  <title>Burble Load Boards</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Burble Load Boards</h1>
+    <div class="controls">
+      <button id="manage" type="button">Manage dropzones</button>
+      <label>
+        Layout
+        <select id="columnCount">
+          <option value="1">1 column</option>
+          <option value="2">2 columns</option>
+          <option value="3">3 columns</option>
+        </select>
+      </label>
+      <button id="reloadAll" type="button">Reload all</button>
+      <button id="install" type="button" hidden>Install app</button>
+    </div>
+  </header>
+
+  <section id="manager" hidden>
+    <div class="manager-inner">
+      <h2>Add a Burble dropzone</h2>
+      <p>Search the Fourway Solutions Burble catalog by dropzone name or ID.</p>
+      <input id="search" type="search" placeholder="Try Midwest, Chicago, or 359" autocomplete="off">
+      <div id="results"></div>
+    </div>
+  </section>
+
+  <main id="dashboard"></main>
+  <div id="empty" hidden>
+    <h2>No load boards selected</h2>
+    <p>Open <strong>Manage dropzones</strong> to add one.</p>
+  </div>
+  <footer>
+    Dropzone choices are saved on this device. Catalog source:
+    <a href="https://www.fourway.org/dzlist.html" target="_blank" rel="noopener">Fourway Solutions Burble Dropzone List</a>.
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

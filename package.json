@@ -1,0 +1,13 @@
+{
+  "name": "burble-dashboard-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Installable web dashboard for public Burble load boards",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check app.js && node --check service-worker.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
