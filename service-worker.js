@@ -1,4 +1,4 @@
-const CACHE = "burble-dashboard-v3";
+const CACHE = "burble-dashboard-v4";
 const APP_SHELL = [
   "./",
   "index.html",
