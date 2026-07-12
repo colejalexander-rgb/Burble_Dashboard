@@ -28,7 +28,7 @@ let installPrompt = null;
 function normalizeBoard(input) {
   const dzId = Number.parseInt(input?.dzId, 10);
   const name = String(input?.name || "").trim();
-  if (!Number.isSafeInteger(dzId) || dzId <= 0 || !name) throw new Error("Invalid dropzone");
+  if (!Number.isSafeInteger(dzId) || dzId <= 0 || !name || name.length > 150) throw new Error("Invalid dropzone");
   return {
     id: `dz-${dzId}`,
     dzId,
