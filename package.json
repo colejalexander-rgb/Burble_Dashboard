@@ -5,7 +5,8 @@
   "description": "Installable web dashboard for public Burble load boards",
   "scripts": {
     "start": "node server.js",
-    "check": "node --check server.js && node --check app.js && node --check service-worker.js"
+    "check": "node --check server.js && node --check app.js && node --check service-worker.js && node --check lib/weather.js && node --check lib/airports.js && node --check lib/burble-loads.js",
+    "test": "node lib/weather.test.js"
   },
   "engines": {
     "node": ">=20"

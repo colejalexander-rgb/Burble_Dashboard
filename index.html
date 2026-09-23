@@ -15,40 +15,120 @@
 </head>
 <body>
   <header>
-    <h1>Burble Load Boards</h1>
-    <div class="controls">
-      <button id="manage" type="button">Manage dropzones</button>
-      <label>
-        Layout
-        <select id="columnCount">
-          <option value="1">1 column</option>
-          <option value="2">2 columns</option>
-          <option value="3">3 columns</option>
-        </select>
-      </label>
-      <button id="reloadAll" type="button">Reload all</button>
+    <div class="header-top">
+      <h1>Burble Load Boards</h1>
+      <div class="controls" id="boards-controls">
+        <button id="manage" type="button">Manage dropzones</button>
+        <label>
+          Layout
+          <select id="columnCount">
+            <option value="1">1 column</option>
+            <option value="2">2 columns</option>
+            <option value="3">3 columns</option>
+          </select>
+        </label>
+        <button id="reloadAll" type="button">Reload all</button>
+      </div>
       <button id="install" type="button" hidden>Install app</button>
     </div>
+    <nav class="tab-bar">
+      <button class="tab-btn active" data-tab="boards"  type="button">📋 Load Boards</button>
+      <button class="tab-btn"        data-tab="weather" type="button">🌤 DZ Weather Ranking</button>
+    </nav>
   </header>
 
-  <section id="manager" hidden>
-    <div class="manager-inner">
-      <h2>Add a Burble dropzone</h2>
-      <p>Search the Fourway Solutions Burble catalog by dropzone name or ID.</p>
-      <input id="search" type="search" placeholder="Try Midwest, Chicago, or 359" autocomplete="off">
-      <div id="results"></div>
+  <!-- ── Boards tab ───────────────────────────────────────────────────────── -->
+  <div id="tab-boards">
+    <section id="manager" hidden>
+      <div class="manager-inner">
+        <h2>Add a Burble dropzone</h2>
+        <p>Search the Fourway Solutions Burble catalog by dropzone name or ID.</p>
+        <input id="search" type="search" placeholder="Try Midwest, Chicago, or 359" autocomplete="off">
+        <div id="results"></div>
+      </div>
+    </section>
+
+    <main id="dashboard"></main>
+    <div id="empty" hidden>
+      <h2>No load boards selected</h2>
+      <p>Open <strong>Manage dropzones</strong> to add one.</p>
+    </div>
+    <footer>
+      Dropzone choices are saved on this device. Catalog source:
+      <a href="https://www.fourway.org/dzlist.html" target="_blank" rel="noopener">Fourway Solutions Burble Dropzone List</a>.
+    </footer>
+  </div>
+
+  <!-- ── Weather tab ──────────────────────────────────────────────────────── -->
+  <section id="tab-weather" hidden>
+    <div id="weather">
+
+      <div class="wx-controls">
+        <label for="wx-day">Date</label>
+        <input id="wx-day" type="date">
+        <button id="wx-refresh" type="button">↺ Refresh</button>
+      </div>
+
+      <div class="wx-settings-toggle" id="wx-settings-toggle" role="button" tabindex="0">
+        <span>⚙ Settings &amp; flying preferences</span>
+        <span id="wx-toggle-arrow">▶</span>
+      </div>
+      <div id="wx-settings-body" hidden>
+        <div class="settings-grid">
+          <div class="settings-field">
+            <label for="wx-home-lat">Home latitude</label>
+            <input id="wx-home-lat" type="number" step="0.0001" min="-90"  max="90"  placeholder="43.0731">
+          </div>
+          <div class="settings-field">
+            <label for="wx-home-lon">Home longitude</label>
+            <input id="wx-home-lon" type="number" step="0.0001" min="-180" max="180" placeholder="-89.4012">
+          </div>
+          <div class="settings-field">
+            <label for="wx-max-dist">Max distance (miles)</label>
+            <input id="wx-max-dist" type="number" step="10" min="25" max="1000" placeholder="250">
+          </div>
+        </div>
+        <div class="settings-actions wx-locate-me">
+          <button id="wx-use-location" type="button">📍 Use my location</button>
+          <span id="wx-use-location-msg" class="preference-hint"></span>
+        </div>
+
+        <div class="score-explainer">
+          Set the conditions that feel good to you. Each condition is worth up to 25 points, for a simple 100-point score. A condition at or better than your preference earns all 25 points; it loses points evenly as it approaches the safety limit. Any safety limit below still forces <strong>No-Go</strong>.
+        </div>
+        <div class="preference-grid">
+          <div class="preference-field">
+            <label for="p-min-ceiling">Minimum ceiling <span id="p-min-ceiling-val"></span></label>
+            <input id="p-min-ceiling" type="range" min="3000" max="14000" step="500">
+            <div class="preference-hint">You get all 25 ceiling points at this height. Below 2,500 ft is always No-Go.</div>
+          </div>
+          <div class="preference-field">
+            <label for="p-max-wind">Comfortable maximum wind <span id="p-max-wind-val"></span></label>
+            <input id="p-max-wind" type="range" min="8" max="27" step="1">
+            <div class="preference-hint">You get all 25 wind points at or below this wind. Effective wind at 28 kt is always No-Go.</div>
+          </div>
+          <div class="preference-field">
+            <label for="p-max-precip">Maximum precip chance <span id="p-max-precip-val"></span></label>
+            <input id="p-max-precip" type="range" min="5" max="95" step="5">
+            <div class="preference-hint">You get all 25 precip points at or below this chance. Any active precipitation is always No-Go.</div>
+          </div>
+          <div class="preference-field">
+            <label for="p-min-visibility">Minimum visibility <span id="p-min-visibility-val"></span></label>
+            <input id="p-min-visibility" type="range" min="4" max="10" step="1">
+            <div class="preference-hint">You get all 25 visibility points at this distance. Below 3 SM is always No-Go.</div>
+          </div>
+        </div>
+        <div class="settings-actions">
+          <button id="wx-save-settings" class="accent" type="button">Save &amp; re-rank</button>
+          <button id="wx-reset-preferences" type="button">Reset preferences</button>
+        </div>
+      </div>
+
+      <div id="wx-status"></div>
+      <div id="wx-ranking"></div>
     </div>
   </section>
 
-  <main id="dashboard"></main>
-  <div id="empty" hidden>
-    <h2>No load boards selected</h2>
-    <p>Open <strong>Manage dropzones</strong> to add one.</p>
-  </div>
-  <footer>
-    Dropzone choices are saved on this device. Catalog source:
-    <a href="https://www.fourway.org/dzlist.html" target="_blank" rel="noopener">Fourway Solutions Burble Dropzone List</a>.
-  </footer>
   <script src="app.js"></script>
 </body>
 </html>
