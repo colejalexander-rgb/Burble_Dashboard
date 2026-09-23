@@ -1,47 +1,45 @@
-# Burble Dashboard PWA
+# Burble Dashboard — Web / PWA
 
-A static, installable web version of Burble Dashboard. It displays public
-Burble load boards in iframes and saves selected dropzones and layout settings
-in the browser.
+Installable web app for viewing multiple Burble load boards in one page. Runs locally via a Node server or deployed to any Node host (Render free tier works).
 
-## Test locally
+The server proxies Burble requests same-origin to work around the session cookie restriction that blocks Burble boards in third-party iframes.
 
-The app must be served over HTTP rather than opened directly from disk:
+## Run locally
 
-Double-click `START_PWA.cmd`. It starts the local server and opens the
-dashboard automatically.
-
-Or run:
+Double-click `START_PWA.cmd`, or:
 
 ```powershell
+npm install    # first time only
 node server.js
 ```
 
 Then open <http://localhost:4174/>.
 
-## Deploy
+## Install as PWA
 
-Burble's display server requires a session cookie that browsers block in
-third-party iframes. Because of that, this version includes a same-origin
-server-side proxy and cannot be deployed to a static-only host such as GitHub
-Pages. Deploy `server.js` with the static files to a Node.js host.
+- **iPhone/iPad:** Open the URL in Safari → Share → Add to Home Screen.
+- **Desktop/Android:** Look for the Install button in the browser address bar.
 
-### Render free web service
+The app shell loads offline after the first visit. Live load boards require the server and an internet connection.
 
-1. Put the contents of this folder in a GitHub repository.
-2. Sign in at <https://render.com/> using GitHub.
-3. Select **New > Blueprint** and connect the repository.
-4. Render reads `render.yaml`; approve the free `burble-dashboard` web service.
-5. Open the generated `https://...onrender.com` URL after deployment finishes.
+## Deploy to Render (free)
 
-Render automatically redeploys after each push to the connected repository.
-Free services sleep after 15 minutes without traffic, so the first visit after
-an idle period can take about one minute.
+Live at <https://burble-dashboard.onrender.com/>, deployed from the GitHub repo
+[colejalexander-rgb/Burble_Dashboard](https://github.com/colejalexander-rgb/Burble_Dashboard)
+(branch `main`). That repo contains **only this `web/` folder, flattened to its root** —
+so `render.yaml` has no `rootDir`. Render redeploys automatically on each push.
 
-On iPhone, open the deployed URL in Safari and choose **Share > Add to Home
-Screen**. On supported desktop and Android browsers, use the **Install app**
-button.
+To deploy, commit your changes in the main Burble repo, then from the repo root:
 
-The interface and dropzone catalog are available offline after the first
-visit. Burble load boards require both the local/deployed server and an
-internet connection.
+```powershell
+powershell -File scripts\deploy-web.ps1
+```
+
+The script pushes the committed `web/` folder as a fast-forward on top of GitHub's
+existing history (it never force-pushes). Only committed changes deploy.
+
+Free services sleep after 15 minutes idle — first visit after a pause takes ~1 minute to wake.
+
+## How the proxy works
+
+`server.js` intercepts requests to `/burble/{dzId}/...`, forwards them to `https://us-displays.burblesoft.com`, caches the Burble session cookie server-side, and rewrites URLs in HTML/JS/CSS responses so the browser stays on the same origin. This is necessary because Burble sets `SameSite` cookies that browsers block in cross-origin iframes.
