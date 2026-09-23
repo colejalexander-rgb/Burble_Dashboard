@@ -1,4 +1,4 @@
-const CACHE = "burble-dashboard-v5";
+const CACHE = "burble-dashboard-v6";
 const APP_SHELL = [
   "./",
   "index.html",
@@ -25,7 +25,8 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
-  if (url.pathname.includes("/burble/")) return;
+  if (event.request.method !== "GET") return;
+  if (url.pathname.includes("/burble/") || url.pathname.startsWith("/api/")) return;
   event.respondWith(
     caches.match(event.request).then((cached) =>
       cached || fetch(event.request).then((response) => {
