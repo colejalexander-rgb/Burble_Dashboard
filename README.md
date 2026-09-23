@@ -24,13 +24,18 @@ The app shell loads offline after the first visit. Live load boards require the 
 
 ## Deploy to Render (free)
 
-1. Push the repo root to GitHub (the `render.yaml` in this folder is configured with `rootDir: web`).
-2. Sign in at [render.com](https://render.com/) with GitHub.
-3. New → Blueprint → connect the repo.
-4. Render reads `render.yaml` and creates a free web service.
-5. Open the generated `https://...onrender.com` URL once the deploy finishes.
+Live at <https://burble-dashboard.onrender.com/>, deployed from the GitHub repo
+[colejalexander-rgb/Burble_Dashboard](https://github.com/colejalexander-rgb/Burble_Dashboard)
+(branch `main`). That repo contains **only this `web/` folder, flattened to its root** —
+so `render.yaml` has no `rootDir`. Render redeploys automatically on each push.
 
-Free services sleep after 15 minutes idle — first visit after a pause takes ~1 minute to wake. Render redeploys automatically on each push.
+To deploy, commit your changes in the main Burble repo, then from the repo root:
+
+```powershell
+git subtree push --prefix web origin main
+```
+
+Free services sleep after 15 minutes idle — first visit after a pause takes ~1 minute to wake.
 
 ## How the proxy works
 
