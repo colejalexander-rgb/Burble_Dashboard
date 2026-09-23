@@ -32,8 +32,11 @@ so `render.yaml` has no `rootDir`. Render redeploys automatically on each push.
 To deploy, commit your changes in the main Burble repo, then from the repo root:
 
 ```powershell
-git subtree push --prefix web origin main
+powershell -File scripts\deploy-web.ps1
 ```
+
+The script pushes the committed `web/` folder as a fast-forward on top of GitHub's
+existing history (it never force-pushes). Only committed changes deploy.
 
 Free services sleep after 15 minutes idle — first visit after a pause takes ~1 minute to wake.
 
